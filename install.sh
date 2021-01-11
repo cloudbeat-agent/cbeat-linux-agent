@@ -221,8 +221,8 @@ fi
 
 ### Install ###
 mkdir -p /opt/cbeat >> $LOG 2>&1
-wget -N --no-check-certificate -O /opt/cbeat/agent.sh https://raw.githubusercontent.com/cloudbeat-agent/cbeat/main/agent.sh >> $LOG 2>&1
-wget -N --no-check-certificate -O /opt/cbeat/uninstall.sh https://raw.githubusercontent.com/cloudbeat-agent/cbeat/main/uninstall.sh >> $LOG 2>&1
+wget -N --no-check-certificate -O /opt/cbeat/agent.sh https://raw.githubusercontent.com/cloudbeat-agent/cbeat-shfiles/main/agent.sh >> $LOG 2>&1
+wget -N --no-check-certificate -O /opt/cbeat/uninstall.sh https://raw.githubusercontent.com/cloudbeat-agent/cbeat-shfiles/main/uninstall.sh >> $LOG 2>&1
 
 echo "$1" > /opt/cbeat/serverkey
 echo "$2/agent.php" > /opt/cbeat/gateway
